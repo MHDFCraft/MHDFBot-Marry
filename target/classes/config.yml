@@ -1,0 +1,36 @@
+#数据库设置
+DatabaseSettings:
+  #地址
+  Host: "127.0.0.1:3306"
+  #数据库
+  Database: "MHDFBot_Marry"
+  #用户
+  User: "root"
+  #密码
+  Password: "root"
+
+#允许使用的群
+AllowUseGroup:
+  - "1005396066"
+
+#消息设置
+MessageSettings:
+  #回复消息
+  Reply: true
+  #AT用户
+  At: true
+
+#群老婆系统设置
+MarrySettings:
+  #换老婆开关
+  ChangeWife: true
+  #最大更换次数
+  MaxChangeTimes: 1
+  #单身狗
+  Dog: true
+  #单身狗概率
+  DogChange: 20.0
+  #天选之人(可以自选老婆)
+  OptionalWife: true
+  #自选老婆概率
+  OptionalWifeChange: 5.0
