@@ -138,7 +138,7 @@ public final class GroupMessage implements Listener {
 
                 Long mrs = Long.parseLong(matcher.group(1));
                 if (DatabaseUtil.getMarry(event.getGroupId(), mrs) != null) {
-                    messageBuilder.text(i18n("marry.haveMarry"));
+                    messageBuilder.text(i18n("marry.isMarry"));
                 }
 
                 DatabaseUtil.setMarry(event.getGroupId(), new Marry(event.getSender().getUserId(), mrs));
