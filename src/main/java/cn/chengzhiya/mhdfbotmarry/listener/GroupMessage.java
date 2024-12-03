@@ -176,6 +176,9 @@ public final class GroupMessage implements Listener {
                 DatabaseUtil.addChangeWifeTimes(event.getGroupId(), event.getSender().getUserId());
                 messageBuilder.text(i18n("Marry.IsMr").replaceAll("\\{AtMrs}", MessageBuilder.builder().at(mrs).build()));
             }
+            default -> {
+                return;
+            }
         }
         MHDFBot.sendGroupMsg(event.getGroupId(), messageBuilder.build());
     }
