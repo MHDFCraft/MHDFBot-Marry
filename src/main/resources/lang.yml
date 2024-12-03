@@ -1,0 +1,21 @@
+marry:
+  isDog: |-
+    你今天是单身狗,没有老婆哦!
+  isMr: |-
+    你今天的群老婆是{atMrs}!
+  isMrs: |-
+    你今天被娶了,是{atMr}!
+  isMarry: |-
+    虽然你是天选之人,但是人家已经结婚了!
+  canOptionalWife: |-
+    你今天是天选之人,可以通过#选老婆 <AT指定人>自选老婆!
+  cantOptionalWife: |-
+    你不是天选之人,不可以选老婆!
+  optionalWifeUsage: |-
+    用法错误,正确用法:#换老婆 <AT指定人>
+  changeWifeMax: |-
+    不是,你是渣男吧,一天换怎么多老婆!
+  havaWife: |-
+    你已经有老婆了!
+  noWife: |-
+    你还没有娶老婆呢!
