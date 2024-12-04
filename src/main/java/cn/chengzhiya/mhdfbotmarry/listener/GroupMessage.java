@@ -160,8 +160,8 @@ public final class GroupMessage implements Listener {
                     break;
                 }
 
-                if (DatabaseUtil.getChangeWifeTimes(event.getGroupId(), event.getSender().getUserId()) >= main.instance.getConfig().getInt("MarrySettings.MaxChangeTimes")) {
-                    messageBuilder.text(i18n("Marry.ChangeWifeMax"));
+                if (DatabaseUtil.getChangeWifeTimes(event.getGroupId(), event.getSender().getUserId()) >= main.instance.getConfig().getInt("marrySettings.maxChangeTimes")) {
+                    messageBuilder.text(i18n("marry.changeWifeMax"));
                     break;
                 }
 
@@ -174,7 +174,7 @@ public final class GroupMessage implements Listener {
                 marry.setMrs(mrs);
                 DatabaseUtil.changeMarry(event.getGroupId(), marry);
                 DatabaseUtil.addChangeWifeTimes(event.getGroupId(), event.getSender().getUserId());
-                messageBuilder.text(i18n("Marry.IsMr").replaceAll("\\{AtMrs}", MessageBuilder.builder().at(mrs).build()));
+                messageBuilder.text(i18n("marry.isMr").replaceAll("\\{atMrs}", MessageBuilder.builder().at(mrs).build()));
             }
             default -> {
                 return;
